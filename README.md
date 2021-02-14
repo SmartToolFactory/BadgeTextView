@@ -16,7 +16,7 @@ rectangle
   results select between 1 and 2
 
 * Set maximum number **badge_max_number**. After this number it's displayed with +. For instance if
-  you set maximum number to 99, after 99 it looks as **99**
+  you set maximum number to 99, after 99 it looks as **99+**
 
 * Set radius ratio **badge_round_corner_ratio** for rounded rectangle, it's .5f by default change it
   to any number between 1 and 0
