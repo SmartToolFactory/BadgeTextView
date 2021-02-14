@@ -9,7 +9,7 @@ rectangle
 
 | Default | Debug   | Increment |
 | ----------|----------------| --------|
-| <img src="./screenshots/img1.png"/> | <img src="./screenshots/img2.png"/> | <img src="./screenshots/counter.gif"/> |
+| <img src="./screenshots/img1.png" width="320"/> | <img src="./screenshots/img2.png" width="320"/> | <img src="./screenshots/counter.gif"/> |
 
 <h2>Customizable features</h2>
 
