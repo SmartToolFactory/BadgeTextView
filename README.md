@@ -42,4 +42,6 @@ To change horizontal area set
 ``` horizontalSpaceAroundText = ((textHeight * .24f) + 8 + paddingHorizontal).toInt()```
 any function in **onMeasure**
 
-## TODO
+### TODOs:
+- [ ] Add Compose style Scope and Modifier to set properties using these interfaces
+- [ ] Add pin mode to display smaller circle with no text as WhatsApp status notification.
