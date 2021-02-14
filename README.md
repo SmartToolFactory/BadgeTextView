@@ -1,6 +1,5 @@
 # Badge TextView
 
-## Badge TextView
 
 Badge TextView for Android that like the draws number on a badge which can be customizable and
 scalable by almost retaining it's same shape. It displays numbers either as circle or rounded
@@ -22,7 +21,6 @@ rectangle
 * Set radius ratio **badge_round_corner_ratio** for rounded rectangle, it's .5f by default change it
   to any number between 1 and 0
 
-*
 
 ### Shadow
 
