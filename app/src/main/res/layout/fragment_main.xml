@@ -7,17 +7,165 @@
     android:layout_height="match_parent"
     tools:context=".ui.main.PlaceholderFragment">
 
-    <TextView
-        android:id="@+id/section_label"
+    <LinearLayout
+        android:id="@+id/llBadgeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/etText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.smarttoolfactory.badgetextview.BadgeTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:badge_shadow_radius="2dp" />
+
+        <com.smarttoolfactory.badgetextview.BadgeTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:textColor="@color/white"
+            app:badge_border_color="#9CCC65"
+            android:textSize="12sp"
+            app:badge_circle_threshold="2"
+            app:badge_border_width="2dp" />
+
+        <com.smarttoolfactory.badgetextview.BadgeTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:badge_border_color="#29B6F6"
+            app:badge_border_width="2dp"
+            app:badge_circle_threshold="1"
+            app:badge_shadow_radius="2dp" />
+
+        <com.smarttoolfactory.badgetextview.BadgeTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:badge_circle_threshold="1"
+            app:badge_shadow_radius="2dp" />
+
+
+        <com.smarttoolfactory.badgetextview.BadgeTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="73414"
+            android:textColor="#F57C00"
+            app:badge_border_color="#F57C00"
+            app:badge_border_width="2dp"
+            app:badge_padding_horizontal="0dp"
+            app:badge_padding_vertical="0dp" />
+
+        <com.smarttoolfactory.badgetextview.BadgeTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0c0"
+            android:text="97"
+            android:textColor="@color/white"
+            app:badge_shadow_offset_x="2dp"
+            app:badge_shadow_offset_y="2dp"
+            app:badge_shadow_radius="2dp" />
+
+
+        <com.smarttoolfactory.badgetextview.BadgeTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#CDDC39"
+            android:text="This is a sample text"
+            android:textColor="#455A64"
+            android:textSize="36sp" />
+
+        <com.smarttoolfactory.badgetextview.BadgeTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#f0f"
+            android:text="821231"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+
+        <com.smarttoolfactory.badgetextview.BadgeTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="41"
+            android:background="#795548"
+            android:textColor="@color/white"
+            android:textSize="64sp" />
+
+
+        <com.smarttoolfactory.badgetextview.BadgeTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="41"
+            android:background="#FF5722"
+            app:badge_round_corner_ratio=".2"
+            app:badge_shadow_radius="2dp"
+            android:textColor="@color/white"
+            android:textSize="64sp" />
+
+
+        <com.smarttoolfactory.badgetextview.BadgeTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:background="#4FC3F7"
+            android:textColor="#1A237E"
+            android:textSize="24sp" />
+
+
+        <com.smarttoolfactory.badgetextview.BadgeTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="41"
+            android:background="#E91E63"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:hint="Enter badge number"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonSetCount"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSetCount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/buttonSetCount" />
+
+    <Button
+        android:id="@+id/buttonSetCount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/activity_horizontal_margin"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:layout_marginEnd="@dimen/activity_horizontal_margin"
-        android:layout_marginBottom="@dimen/activity_vertical_margin"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/constraintLayout"
-        tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintTop_creator="1" />
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="Set count"
+        app:layout_constraintEnd_toStartOf="@id/buttonTimer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <Button
+        android:id="@+id/buttonTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="Timer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
