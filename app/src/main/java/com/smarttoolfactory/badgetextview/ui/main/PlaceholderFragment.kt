@@ -48,10 +48,6 @@ class PlaceholderFragment : Fragment() {
             if (it is BadgeTextView) badgeTextViewList.add(it)
         }
 
-        badgeTextViewList.forEach {
-            it.isDebug = true
-        }
-
         var jobTimer: Job? = null
 
         binding.buttonTimer.setOnClickListener {
